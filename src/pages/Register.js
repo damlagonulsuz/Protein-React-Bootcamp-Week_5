@@ -4,13 +4,17 @@ import { Formik } from "formik";
 import Dark from "../constants/Icon/Dark";
 import { RegisterSchema } from "../constants/yupSchema";
 import Sun from "../constants/Icon/Sun";
-import { lightTheme, darkTheme } from "../context/Theme";
 
 
 
 function Register(props) {
 
     const [loading, setLoading] = useState(false);
+    const [ theme, setTheme ] = useState('light');
+
+    useEffect(() => {
+
+    }, [])
 
     return (
 
@@ -24,6 +28,7 @@ function Register(props) {
 
 
                         <div className="moonIcon modeControl">
+
                             <button><Dark /></button>
                             <button><Sun /></button>
                         </div>
