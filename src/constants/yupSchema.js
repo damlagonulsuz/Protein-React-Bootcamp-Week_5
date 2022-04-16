@@ -1,0 +1,35 @@
+import * as yup from "yup";
+
+
+
+export const RegisterSchema = yup.object().shape({
+    email: yup
+        .string()
+        .email('Lütfen geçerli bir eposta adresi giriniz.')
+        .required('Eposta alanı zorunludur.'),
+
+    password: yup
+        .string()
+        .typeError('Her karakteri kullanamazsınız.')
+        .min(8, 'Şifreniz 8 karakterden az olamaz.')
+        .max(32, 'Şifreniz 32 karakterden fazla olamaz.')
+        .required('Şifre alanı zorunludur.'),
+
+    username: yup
+        .string()
+        .typeError('Her karakteri kullanamazsınız.')
+        .required('Kullanıcı adı alanı zorunludur.'),
+
+    confirmPassword: yup
+        .string()
+        .oneOf([yup.ref('password'), null], 'Şifreler birbiriyle aynı olmalı.')
+        .required('Şifre doğrulama alanı zorunludur.'),
+
+    terms:yup
+        .boolean()
+        .required('İşaretlenmesi zorunludur.')
+        .oneOf(
+            [true],
+            "Sözleşmeyi okuyup, onayladığınızı kabul etmeniz gerekiyor."
+        )
+})

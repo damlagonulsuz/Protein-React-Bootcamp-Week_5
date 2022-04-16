@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100%;
+  transition: 300ms all;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h5 {
+  margin-top: -2.5rem;
+  font-size: 0.875rem;
+  margin-left: -20rem;
+  color: #8E8E8E;
+  font-family: "Oxygen";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+
+.name {
+  width: 290%;
+  height: auto;
+  margin: -3rem;
+}
+
+.surname {
+  width: 290%;
+  margin: -4.4rem 15rem;
+}
+
+
+.left_side {
+  width: 40%;
+  background-color: #DADADA;
+  height: 46.5rem;
+  height: 62.5rem;
+}
+
+.Patika-h1 {
+  color: #444AFF;
+}
+
+.rect1 {
+  margin-left: 14rem;
+}
+
+.formContainer {
+  width: 60%;
+  float: right;
+  background-color: #E5E5E5;
+  
+}
+
+.title {
+  color: #3C3C3C;
+  font-family: "Oxygen";
+  font-size: 47px;
+  margin: 3rem 6rem;
+}
+
+.left-title {
+  margin: 2rem 3rem;
+  font-family: "Oxygen";
+  font-size: 3.688rem;
+}
+
+.up-bar {
+    height: 10rem;
+}
+
+
+.modeControl input {
+  position: absolute;
+  opacity: 0;
+}
+
+.modeControl button:nth-child(2){
+  display: none;
+}
+
+.modeControl input:checked + button{
+  display: none;
+}
+
+.modeControl input:checked + button + button {
+  display: inline-block;
+} */
+
+.button {
+  background-color: #E5E5E5;
+  border: none;
+}
+
+.moonIcon {
+  margin: -7rem 53rem;
+  
+}
+
+.form {
+  font-family: "Oxygen";
+  color: #3C3C3C;
+  /* padding: 3rem; */
+}
+
+.paddingOfForm {
+  padding-top: 2rem;
+}
+
+
+.person {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Oxygen";
+  font-size: 20px;
+ 
+}
+
+.personel-info {
+  width: 20%;
+  height: 2rem;
+  margin: 1rem 6.8rem;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: inherit;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+p, h1 {
+  margin: auto 3rem;
+  margin-bottom: 1rem;
+}
+
+label.required::after {
+    content: "*";
+    color: red;
+    padding-left: 2px;
+  
+}
+
+
+input {
+  width: 60%;
+  border: 2px solid #aaa;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 4px;
+
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  left: -5rem;
+  margin-top: 1rem;
+  margin-left: -32.5rem;
+  border: 2px solid #8E8E8E;
+  background-color: #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.kayitButton {
+  width: 34rem;
+  height: 3.5rem;
+  background-color: #444AFF;
   color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+  font-family: "Oxygen";
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  height: 16px;
+  padding-left: 11.5rem;
+  padding-top: 0.2rem;
+  color: #EE6356;
+  display: flex;
+
 }
